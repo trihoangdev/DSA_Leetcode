@@ -1,0 +1,9 @@
+public static void showListNode(ListNode head){
+        ListNode curNode = head;
+        while(curNode!=null){
+            System.out.print(curNode.val);
+            if(curNode.next!=null)
+                System.out.print("->");
+            curNode = curNode.next;
+        }
+    }

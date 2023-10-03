@@ -1,0 +1,8 @@
+public static void addNewNodeAfter(ListNode head, int value) {
+        ListNode newNode = new ListNode(value);
+        ListNode curNode = head;
+        while (curNode.next != null) {
+            curNode = curNode.next;
+        }
+        curNode.next = newNode;
+    }
