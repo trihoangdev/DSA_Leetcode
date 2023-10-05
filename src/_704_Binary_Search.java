@@ -1,4 +1,3 @@
-package BaiTap;
 
 public class _704_Binary_Search {
     public static int bsreach(int[] a, int L, int R, int x) {

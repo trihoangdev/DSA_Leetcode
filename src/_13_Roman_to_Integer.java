@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class _13_Roman_to_Integer {
+
     public static int romanToInt(String s) {
         int number = 0;
         int res = 0;
@@ -9,13 +10,13 @@ public class _13_Roman_to_Integer {
         {
             switch (s.charAt(i))
             {
-                case 'I' -> number = 1;
-                case 'V' -> number = 5;
-                case 'X' -> number = 10;
-                case 'L' -> number = 50;
-                case 'C' -> number = 100;
-                case 'D' -> number = 500;
-                case 'M' -> number = 1000;
+                case 'I' : number = 1;
+                case 'V' : number = 5;
+                case 'X' : number = 10;
+                case 'L' : number = 50;
+                case 'C' : number = 100;
+                case 'D' : number = 500;
+                case 'M' : number = 1000;
             }
             if(number < prev)
                 res-=number;
